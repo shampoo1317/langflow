@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: langflow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: langflow
+  template:
+    metadata:
+      labels:
+        app: langflow
+    spec:
+      containers:
+        - name: langflow
+          image: ghcr.io/shampoo1317/langflowtest:1.0.0
+          ports:
+            - containerPort: 7860
