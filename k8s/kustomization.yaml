@@ -1,0 +1,3 @@
+resources:
+  - ./deploy/deployment.yaml
+  - ./resource/route.yaml
