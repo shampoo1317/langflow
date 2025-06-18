@@ -1,0 +1,13 @@
+apiVersion: api-gateway.gen-ai-cf.intra.hitachi.co.jp/v1
+kind: AppRoute
+metadata:
+  name: playground
+  namespace: hitachi-pj-rcatooltest-usermanaged
+spec:
+  requiredAnyRoles:
+    - developers
+  applicationType: frontend
+  target:
+    service:
+      name: langflow
+      port: 80
