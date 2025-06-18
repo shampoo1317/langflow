@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: langflow
-          image: ghcr.io/shampoo1317/langflowtest@sha256:9afe3c6f2a50c8b8427135789ec09339ce8f93e67b1723d73e684c805079568d
+          image: ghcr.io/shampoo1317/langflowtest:1.0.0
           ports:
             - containerPort: 7860
